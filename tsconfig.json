@@ -20,6 +20,7 @@
       }
     ],
     "paths": {
+      "@j4j/components": ["./src/components/index.ts"],
       "@/*": ["./src/*"]
     }
   },
