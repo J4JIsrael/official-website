@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { ReactNode } from "react";
+import Link from 'next/link';
+import type { ReactNode } from 'react';
 
 export const NavBarItem = ({
   href,
@@ -14,7 +14,7 @@ export const NavBarItem = ({
   >
     <Link
       href={href}
-      className="block py-2 px-4 text-white rounded md:bg-transparent md:p-0 dark:text-white"
+      className="block rounded px-4 py-2 text-white dark:text-white md:bg-transparent md:p-0"
       aria-current="page"
       rel="page"
     >
