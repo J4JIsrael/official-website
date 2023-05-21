@@ -10,8 +10,8 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="mx-8">
-        <div className="mx-auto flex flex-row-reverse max-w-screen-xl flex-wrap items-center justify-between p-4">
+      <nav >
+        <div className="flex flex-row-reverse max-w-screen-xl flex-wrap items-center justify-between py-4">
           <Link href="/">
             <Image
               src="/assets/logo.png"
