@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
-import { NavBarItem } from './NavBarItem';
+import {NavBarItem} from './NavBarItem';
 import Link from 'next/link';
-import { useState } from 'react';
-import { HamburgerIcon } from '../icons';
+import {useState} from 'react';
+import {HamburgerIcon} from '../icons';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <>
       <nav className="mx-8">
-        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+        <div className="mx-auto flex flex-row-reverse max-w-screen-xl flex-wrap items-center justify-between p-4">
           <Link href="/">
             <Image
               src="/assets/logo.png"
@@ -36,7 +36,7 @@ export const Header = () => {
           >
             <ul
               className="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium dark:border-gray-700 md:mt-0 md:flex-row md:space-x-8 md:space-x-reverse md:border-0 md:p-0"
-              style={{ direction: 'rtl' }}
+              style={{direction: 'rtl'}}
             >
               <NavBarItem href="#">עלינו</NavBarItem>
               <NavBarItem href="#">פנאי</NavBarItem>
