@@ -1,2 +1,2 @@
 export * from './HamburgerIcon';
-export * from "./InfoIcon";
+export * from './InfoIcon';
