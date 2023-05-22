@@ -1,10 +1,9 @@
 import { InfoIcon } from '@/components/icons';
-import './ReadMoreBtn.style.css';
 
 export const ReadMoreBtn = () => (
   <button
-    className="readMoreShadow rounded-xl border-2 border-white-50
-    bg-aqua px-6 py-1 text-black
+    className="rounded-xl border-2 border-white-50 bg-aqua
+    px-6 py-1 text-black shadow-readmore
     "
   >
     <div
@@ -12,7 +11,12 @@ export const ReadMoreBtn = () => (
         justify-evenly "
     >
       <span className="ml-4">
-        <InfoIcon />
+        <InfoIcon
+          // className="h-[27px] w-[27px]"
+          // OR
+          height="27"
+          width="27"
+        />
       </span>
       <span>קראו עלינו עוד...</span>
     </div>

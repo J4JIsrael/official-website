@@ -2,12 +2,7 @@ import { PeopleGraph } from './PeopleGraph';
 import { ReadMoreBtn } from './ReadMoreBtn';
 
 export const Main = () => (
-  <main
-    style={{
-      height: 'calc(100vh - 80px)',
-    }}
-    className="mt-12"
-  >
+  <main className="mt-12 h-[calc(100vh-80px)]">
     <div className="relative h-full lg:flex lg:justify-between">
       <div className="absolute left-0 top-0 z-0 h-2/3 w-full opacity-20 lg:-ml-32 lg:h-full lg:w-1/2 lg:opacity-100 ">
         <PeopleGraph />

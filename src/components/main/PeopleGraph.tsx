@@ -7,8 +7,6 @@ export const PeopleGraph = () => (
     src="/assets/peopleGraph.svg"
     alt="people graph"
     fill
-    style={{
-      objectFit: 'cover',
-    }}
+    className="object-cover"
   />
 );
