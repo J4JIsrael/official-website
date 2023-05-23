@@ -45,6 +45,10 @@ module.exports = {
         'body-title': '1.75rem',
         'body-text': '1.625rem',
       },
+
+      boxShadow: {
+        readmore: '0px 0px 14px rgba(124, 255, 211, 0.5)',
+      },
     },
   },
   plugins: [],
