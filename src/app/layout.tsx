@@ -1,6 +1,7 @@
+import Footer from '@/components/Footer';
 import { Header } from '@j4j/components';
-import './globals.css';
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'J4J Community',
@@ -13,10 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="rtl">
-      <body className="mx-16 lg:mx-32">
+    <html lang="he" dir="rtl">
+      <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
