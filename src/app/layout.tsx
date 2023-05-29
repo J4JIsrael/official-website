@@ -1,5 +1,4 @@
-import Footer from '@/components/Footer';
-import { Header } from '@j4j/components';
+import { Footer, Header } from '@j4j/components';
 import type { Metadata } from 'next';
 import './globals.css';
 
