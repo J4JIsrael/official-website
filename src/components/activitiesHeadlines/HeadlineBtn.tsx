@@ -1,9 +1,7 @@
-import React, { forwardRef } from 'react';
-
 interface HeadlineBtnProps {
   text: string;
   className: string;
-  onClick: () => void; 
+  onClick: () => void;
 }
 
 export const HeadlineBtn = ({ text, className, onClick }: HeadlineBtnProps) => {
