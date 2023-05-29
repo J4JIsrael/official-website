@@ -4,6 +4,7 @@ import { PlatformsBlock } from './PlatformsBlock';
 
 export const Footer = () => {
   // TODO: add backgorund from Tailwind theme
+  // TODO: write only max-lg once
 
   return (
     <footer
