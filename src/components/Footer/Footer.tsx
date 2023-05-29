@@ -1,14 +1,11 @@
-import CenterBlock from '@/components/Footer/components/CenterBlock';
-import LogoBlock from '@/components/Footer/components/LogoBlock';
-import PlatformsBlock from '@/components/Footer/components/PlatformsBlock';
-import useStyles from '@/components/Footer/Footer.useStyles';
+import { CenterBlock } from './CenterBlock';
+import { LogoBlock } from './LogoBlock';
+import { PlatformsBlock } from './PlatformsBlock';
 
-const Footer = () => {
-  const classes = useStyles();
-
+export const Footer = () => {
   return (
     <footer
-      className={classes.root}
+      className="bg-gray-100 text-gray-700 flex h-20 w-full flex-row items-center justify-between p-20"
       // TODO: move to global theme and write styles in the classes object
 
       style={{
@@ -23,5 +20,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

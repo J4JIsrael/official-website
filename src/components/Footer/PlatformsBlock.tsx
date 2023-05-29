@@ -1,9 +1,7 @@
-import LinkIcon from '@/components/Footer/components/PlatformsBlock/LinkIcon';
-import useStyles from '@/components/Footer/components/PlatformsBlock/PlatformsBlock.useStyles';
 import { ICONS } from '@/utils/constants';
+import { LinkIcon } from './LinkIcon';
 
-const PlatformsBlock = () => {
-  const classes = useStyles();
+export const PlatformsBlock = () => {
   const iconSize = 44;
 
   const icons = [
@@ -40,7 +38,7 @@ const PlatformsBlock = () => {
   ];
 
   return (
-    <div className={classes.root}>
+    <div className="flex flex-row items-center justify-evenly gap-2">
       {icons.map(icon => {
         const { iconSrc, size, alt, linkSrc } = icon;
         return (
@@ -56,5 +54,3 @@ const PlatformsBlock = () => {
     </div>
   );
 };
-
-export default PlatformsBlock;

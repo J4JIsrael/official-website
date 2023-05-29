@@ -7,12 +7,10 @@ interface LinkIconProps {
   linkSrc: string;
 }
 
-const LinkIcon = ({ iconSrc, size, alt, linkSrc }: LinkIconProps) => {
+export const LinkIcon = ({ iconSrc, size, alt, linkSrc }: LinkIconProps) => {
   return (
     <a href={linkSrc} target="_blank">
       <Image src={iconSrc} width={size} height={size} alt={alt} />
     </a>
   );
 };
-
-export default LinkIcon;
