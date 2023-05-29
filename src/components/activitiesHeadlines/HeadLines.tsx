@@ -34,7 +34,6 @@ export const HeadLines = () => {
           text="מציאת עבודה"
         />
       </div>
-      <h3 className="text-white">{isSelected}</h3>
     </div>
   );
 };
