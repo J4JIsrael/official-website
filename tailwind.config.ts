@@ -45,10 +45,6 @@ module.exports = {
         'body-title': '1.75rem',
         'body-text': '1.625rem',
       },
-      gradient: {
-        'footer-gradient':
-          'linear-gradient(324.86deg, rgba(0, 255, 157, 0.1) -107.86%, rgba(213, 93, 255, 0.2) 176.56%)',
-      },
       boxShadow: {
         readmore: '0px 0px 14px rgba(124, 255, 211, 0.5)',
       },

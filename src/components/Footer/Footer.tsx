@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <footer
-      className="bg-footer-gradient flex w-full flex-row items-center justify-between p-20 opacity-70 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
+      className="mt-4 flex w-full flex-row items-center justify-between p-20 opacity-70 max-lg:flex-col max-lg:gap-6 max-lg:p-6"
       style={{
         background:
           'linear-gradient(324.86deg, rgba(0, 255, 157, 0.1) -107.86%, rgba(213, 93, 255, 0.2) 176.56%)',
