@@ -1,16 +1,14 @@
-import Image from 'next/image';
+import React from 'react';
 
 interface LinkIconProps {
-  iconSrc: string;
-  size: number;
-  alt: string;
   linkSrc: string;
+  icon: React.ReactNode;
 }
 
-export const LinkIcon = ({ iconSrc, size, alt, linkSrc }: LinkIconProps) => {
+export const LinkIcon = ({ linkSrc, icon }: LinkIconProps) => {
   return (
     <a href={linkSrc} target="_blank">
-      <Image src={iconSrc} width={size} height={size} alt={alt} />
+      {icon}
     </a>
   );
 };
