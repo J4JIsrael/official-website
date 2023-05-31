@@ -1,4 +1,4 @@
-import { HeadLines } from "@/components/HeadLines";
+import { HeadLines } from '@j4j/components';
 
 export default function Home() {
   return (

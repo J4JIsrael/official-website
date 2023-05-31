@@ -1,8 +1,7 @@
 import { Header } from '@j4j/components';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { HeadLines } from '@/components/HeadLines/HeadLines';
-
+import { HeadLines } from '@/components/headLines/HeadLines';
 
 const inter = Inter({ subsets: ['latin'] });
 
