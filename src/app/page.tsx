@@ -1,4 +1,4 @@
-import { HeadLines, Main } from '@j4j/components';
+import { HeadLines, Main, CommunitySentence } from '@j4j/components';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <HeadLines />
       </main>
       <Main />
+      <CommunitySentence />
     </>
   );
 }
