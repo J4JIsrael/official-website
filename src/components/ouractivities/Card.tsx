@@ -13,10 +13,10 @@ const styles = {
 
 interface CardProps {
   title: string;
-  body: string;
+  content: string;
 }
 
-export const Card = ({title,body}: CardProps) => {
+export const Card = ({title,content}: CardProps) => {
   return (
     <>
       <div>
@@ -26,7 +26,7 @@ export const Card = ({title,body}: CardProps) => {
 h-[137.54px] w-[342.75px] items-center justify-center rounded-md  bg-white text-center "
         >
           <p className="text-white">
-            {body}
+            {content}
           </p>
           <div
             style={styles.headerBg}

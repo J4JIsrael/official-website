@@ -1,8 +1,7 @@
 import {
-  HeadLines,
   Main,
   CommunitySentence,
-  OurActivities,
+  OurActivitiesSection
 } from '@j4j/components';
 
 export default function Home() {
@@ -10,8 +9,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <h1 className="text-3xl font-bold tracking-widest">Welcome to J4J </h1>
-        <HeadLines />
-        <OurActivities />
+        <OurActivitiesSection/>
       </main>
       <Main />
       <CommunitySentence />

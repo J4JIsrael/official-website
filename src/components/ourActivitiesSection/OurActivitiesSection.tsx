@@ -1,10 +1,17 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react';
+import { OurActivities } from '../ourActivities/OurActivities';
+import { HeadLines } from '../headLines/HeadLines';
 
-const OurActivitiesSection = () => {
-    const [titleState, setTitleState] = useState(cardContent[0])
-    return (
-    <div>OurActivitiesSection</div>
-  )
-}
+export const OurActivitiesSection = () => {
+  const [activeLabel, setActiveLabel] = useState<
+    'jobs' | 'education' | 'projects'
+  >('education');
 
-export default OurActivitiesSection
+  return (
+    <>
+      <HeadLines setActiveLabel={setActiveLabel} />
+      <OurActivities activeLabel={activeLabel} />
+    </>
+  );
+};

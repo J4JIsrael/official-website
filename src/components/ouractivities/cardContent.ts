@@ -1,4 +1,8 @@
-export const cardContent = {
+interface CardContentInterface {
+  [key: string]: { title: string; content: string }[];
+}
+
+export const cardContent: CardContentInterface = {
   education: [
     { title: 'לימודים', content: ' תכנים לימודיים, בהמון מגוון של נושאים' },
     {
@@ -22,7 +26,7 @@ export const cardContent = {
       content:
         'סדנאות לכתיבת קורות חיים, ועזרה הדדית והתייעצות בכתיבת קורות חיים',
     },
-    { title: '"חבר מביא חבר"', content: '' },
+    { title: '"חבר מביא חבר"', content: 'הרחבת מעגל הקשרים והגשת קורות חיים דרך חברי הקהילה' },
   ],
   projects: [
     {
