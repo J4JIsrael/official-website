@@ -1,9 +1,9 @@
 'use client';
 import Image from 'next/image';
-import { NavBarItem } from './NavBarItem';
 import Link from 'next/link';
 import { useState } from 'react';
 import { HamburgerIcon } from '../icons';
+import { NavBarItem } from './NavBarItem';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);

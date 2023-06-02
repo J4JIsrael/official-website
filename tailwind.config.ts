@@ -48,9 +48,9 @@ module.exports = {
         'body-title': '1.75rem',
         'body-text': '1.625rem',
       },
-
       boxShadow: {
         readmore: '0px 0px 14px rgba(124, 255, 211, 0.5)',
+        sentence: '0px 1px 64px rgba(0, 0, 0, 0.39)'
       },
     },
   },
