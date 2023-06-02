@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { OurActivities } from '../ourActivities/OurActivities';
+import { OurActivities } from '@j4j/components';
 import { HeadLines } from '../headLines/HeadLines';
 
 export const OurActivitiesSection = () => {
