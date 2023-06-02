@@ -2,11 +2,18 @@
 import React, { useEffect, useState } from 'react';
 import { HeadlineBtn } from './HeadlineBtn';
 
-export const HeadLines = () => {
+interface HeadLinesProps {
+  setActiveLabel: React.Dispatch< React.SetStateAction<'jobs' | 'education' | 'projects'> >;
+}
+
+
+export const HeadLines = ({setActiveLabel}:HeadLinesProps ) => {
   type btnSelected = 'btnL' | 'btnCenter' | 'btnR';
   const [isSelected, setIsSelected] = useState<btnSelected>('btnCenter');
 
-  const onClick = (type: btnSelected) => {
+  const onClick = (type: btnSelected, newActiveLabel:'jobs' | 'education' | 'projects') => {
+    console.log(type, 'type', newActiveLabel, 'newActiveLabel');
+    setActiveLabel(newActiveLabel)
     setIsSelected(type);
   };
 
@@ -19,19 +26,19 @@ export const HeadLines = () => {
       <h2 className="text-3xl font-bold text-white">הפעילות שלנו</h2>
       <div className=" flex h-32 w-11/12 items-center justify-center gap-2">
         <HeadlineBtn
-          onClick={() => setIsSelected('btnR')}
+          onClick={() => onClick('btnR', 'education')}
           className="relative rounded-l-[1rem] rounded-r-[5rem]"
+          text="העשרה"
+        />
+        <HeadlineBtn
+          onClick={() => onClick('btnCenter', 'jobs')}
+          className=" rounded-lg"
           text="מציאת עבודה"
         />
         <HeadlineBtn
-          onClick={() => setIsSelected('btnCenter')}
-          className=" rounded-lg"
-          text="פרויקטים"
-        />
-        <HeadlineBtn
-          onClick={() => setIsSelected('btnL')}
+          onClick={() => onClick('btnL', 'projects')}
           className=" rounded-l-[5rem] rounded-r-[1rem]"
-          text="העשרה"
+          text="פרוייקטים"
         />
       </div>
     </div>
