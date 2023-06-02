@@ -4,3 +4,4 @@ export * from './header/Header';
 export * from './icons';
 export * from './main/Main';
 export * from './ourActivitiesSection/OurActivitiesSection';
+export * from './pageWrapper/PageWrapper';
