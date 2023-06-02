@@ -14,8 +14,11 @@ module.exports = {
     colors: {
       aqua: '#00FFAA',
       'aqua-bright': '#7CFFD3',
+      'aqua-dark': '#00FF9D1A',
+      pink: '#D55DFF',
       violet: '#8146FF',
       white: '#fff',
+      background: '#080808',
       'white-50': 'rgb(var(--color-white) / 0.5)',
       black: '#000',
     },
