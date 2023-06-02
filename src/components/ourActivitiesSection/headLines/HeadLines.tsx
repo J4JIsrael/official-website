@@ -1,19 +1,18 @@
 'use client';
+import { type ActivitiesLabel } from '@/types';
 import React, { useEffect, useState } from 'react';
 import { HeadlineBtn } from './HeadlineBtn';
 
 interface HeadLinesProps {
-  setActiveLabel: React.Dispatch< React.SetStateAction<'jobs' | 'education' | 'projects'> >;
+  setActiveLabel: React.Dispatch<React.SetStateAction<ActivitiesLabel>>;
 }
 
-
-export const HeadLines = ({setActiveLabel}:HeadLinesProps ) => {
+export const HeadLines = ({ setActiveLabel }: HeadLinesProps) => {
   type btnSelected = 'btnL' | 'btnCenter' | 'btnR';
   const [isSelected, setIsSelected] = useState<btnSelected>('btnCenter');
 
-  const onClick = (type: btnSelected, newActiveLabel:'jobs' | 'education' | 'projects') => {
-    console.log(type, 'type', newActiveLabel, 'newActiveLabel');
-    setActiveLabel(newActiveLabel)
+  const onClick = (type: btnSelected, newActiveLabel: ActivitiesLabel) => {
+    setActiveLabel(newActiveLabel);
     setIsSelected(type);
   };
 
