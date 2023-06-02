@@ -1,5 +1,3 @@
-import React from 'react';
-
 const styles = {
   headerBg: {
     background:
@@ -11,7 +9,12 @@ const styles = {
   },
 };
 
-export const Card = () => {
+interface CardProps {
+  title: string;
+  content: string;
+}
+
+export const Card = ({ title, content }: CardProps) => {
   return (
     <>
       <div>
@@ -20,14 +23,12 @@ export const Card = () => {
           className="relative mt-8  flex 
 h-[137.54px] w-[342.75px] items-center justify-center rounded-md  bg-white text-center "
         >
-          <p className="text-white">
-            עריכת סמילוציות לראינות טכניים ולראיונות אישיותיים
-          </p>
+          <p className="text-white">{content}</p>
           <div
             style={styles.headerBg}
             className="absolute left-[50%] top-0 flex  h-[52.5px] w-[267.73px] translate-x-[-50%] translate-y-[-50%] transform items-center justify-center rounded-md  text-center  "
           >
-            <h6>סימולציות</h6>
+            <h6>{title}</h6>
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-import { HeadLines } from '@/components/headLines/HeadLines';
 import { Footer, Header } from '@j4j/components';
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'J4J Community',
@@ -15,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-
     <html lang="en" dir="rtl">
-      <body className="mx-16 lg:mx-32 bg-background" >
-
+      <body className="overflow-x-hidden bg-background">
         <Header />
         {children}
         <Footer />
