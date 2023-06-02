@@ -21,17 +21,17 @@ export const HeadLines = () => {
         <HeadlineBtn
           onClick={() => setIsSelected('btnR')}
           className="relative rounded-l-[1rem] rounded-r-[5rem]"
-          text="מציאת עבודה"
+          text="העשרה"
         />
         <HeadlineBtn
           onClick={() => setIsSelected('btnCenter')}
           className=" rounded-lg"
-          text="פרויקטים"
+          text="מציאת עבודה"
         />
         <HeadlineBtn
           onClick={() => setIsSelected('btnL')}
           className=" rounded-l-[5rem] rounded-r-[1rem]"
-          text="העשרה"
+          text="פרוייקטים"
         />
       </div>
     </div>
