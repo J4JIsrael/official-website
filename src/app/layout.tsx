@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="he" dir="rtl">
-      <body>
+
+    <html lang="en" dir="rtl">
+      <body className="mx-16 lg:mx-32 bg-background" >
+
         <Header />
         {children}
         <Footer />
