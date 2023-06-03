@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <footer
-      className="z-10 mt-36 p-20 opacity-70 sm:mt-20 sm:p-10"
+      className="z-10 mt-36 px-6 py-10 opacity-70 sm:mt-20"
       style={{
         background:
           'linear-gradient(324.86deg, rgba(0, 255, 157, 0.1) -107.86%, rgba(213, 93, 255, 0.2) 176.56%)',
