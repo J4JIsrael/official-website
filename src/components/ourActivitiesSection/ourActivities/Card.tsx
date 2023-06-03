@@ -1,7 +1,7 @@
 const styles = {
   headerBg: {
     background:
-      'linear-gradient(154deg, rgba(0, 255, 157, 0.2) -92.79%, rgba(213, 93, 255, 0.1) 218.33%)',
+      'linear-gradient(154deg, rgba(1, 80, 50, 0.8) -92.79%, rgba(86, 37, 105, 0.7) 218.33%)',
   },
   bodyBg: {
     background:
