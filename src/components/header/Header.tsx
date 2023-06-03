@@ -9,7 +9,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="p-6">
       <div className="m-auto flex max-w-[1200px] flex-row-reverse flex-wrap items-center justify-between py-4">
         <Link href="/">
           <Image
