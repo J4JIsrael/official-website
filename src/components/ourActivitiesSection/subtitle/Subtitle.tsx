@@ -1,18 +1,24 @@
-import React from 'react';
 import { type ActivitiesLabel } from '@/types';
+import React from 'react';
 
 interface SubtitleProps {
   activeLabel: ActivitiesLabel;
 }
 
 function setTitle(activeLabel: ActivitiesLabel) {
+  const copy = {
+    education: 'העשרה: להרחיב אופקים בתחומים מגוונים',
+    jobs: 'מציאת עבודה: עוזרים אחד לשני כדי למצוא משרות ועבודות',
+    projects: 'פרויקטים: רוכשים ניסיון מעשי על ידי פרויקטים במסגרות שונות',
+  };
+
   switch (activeLabel) {
     case 'education':
-      return 'וייבינרים והרצאות על בסיס שבועי';
+      return copy.education;
     case 'jobs':
-      return 'מספקים לכם את כל הכלים למציאת עבודה לגמרי בעצמכם';
+      return copy.jobs;
     case 'projects':
-      return 'השתלבות בין פרוייקטים חברתיים וקהילתיים';
+      return copy.projects;
     default:
       return '';
   }
@@ -43,5 +49,3 @@ export const Subtitle = ({ activeLabel }: SubtitleProps) => {
     </p>
   );
 };
-
-
