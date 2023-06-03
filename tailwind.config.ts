@@ -60,6 +60,10 @@ module.exports = {
         readmore: '0px 0px 14px rgba(124, 255, 211, 0.5)',
         sentence: '0px 1px 64px rgba(0, 0, 0, 0.39)',
       },
+          backgroundImage: {
+      'gradient-radial': 'radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(0,255,179,0) 80%)',
+      'gradient-linear': 'linear-gradient(0deg, rgba(0,0,0,0.5858718487394958) 0%, rgba(161,105,235,1) 20%, rgba(0,255,170,1) 100%, rgba(23,254,236,1) 100%, rgba(48,178,131,0) 100%, rgba(0,255,179,0) 100%)',
+    },
     },
   },
   plugins: [],
