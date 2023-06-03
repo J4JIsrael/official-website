@@ -1,6 +1,6 @@
 'use client';
 import { type ActivitiesLabel } from '@/types';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { HeadlineBtn } from './HeadlineBtn';
 
 interface HeadLinesProps {
@@ -9,16 +9,12 @@ interface HeadLinesProps {
 
 export const HeadLines = ({ setActiveLabel }: HeadLinesProps) => {
   type btnSelected = 'btnL' | 'btnCenter' | 'btnR';
-  const [isSelected, setIsSelected] = useState<btnSelected>('btnCenter');
+  const setIsSelected = useState<btnSelected>('btnCenter')[1];
 
   const onClick = (type: btnSelected, newActiveLabel: ActivitiesLabel) => {
     setActiveLabel(newActiveLabel);
     setIsSelected(type);
   };
-
-  useEffect(() => {
-    console.log(isSelected);
-  }, [isSelected]);
 
   return (
     <div className="flex  flex-col items-center justify-evenly ">
