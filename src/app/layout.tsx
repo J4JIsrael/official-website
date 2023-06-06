@@ -14,10 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" dir="rtl">
-      <body className="overflow-x-hidden bg-background">
-        <Header />
-        {children}
-        <Footer />
+      <body className="-z-20 overflow-x-hidden bg-background">
+        <div className="relative">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

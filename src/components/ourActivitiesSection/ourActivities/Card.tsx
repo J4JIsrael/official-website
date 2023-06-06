@@ -1,7 +1,7 @@
 const styles = {
   headerBg: {
     background:
-      'linear-gradient(154deg, rgba(0, 255, 157, 0.2) -92.79%, rgba(213, 93, 255, 0.1) 218.33%)',
+      'linear-gradient(154deg, rgba(1, 80, 50, 0.8) -92.79%, rgba(86, 37, 105, 0.7) 218.33%)',
   },
   bodyBg: {
     background:
@@ -16,22 +16,20 @@ interface CardProps {
 
 export const Card = ({ title, content }: CardProps) => {
   return (
-    <>
-      <div>
+    <div>
+      <div
+        style={styles.bodyBg}
+        className="relative mt-8 flex h-[137.54px] 
+w-[342.75px] items-center justify-center rounded-md bg-white  p-2 text-center "
+      >
+        <p className="text-white">{content}</p>
         <div
-          style={styles.bodyBg}
-          className="relative mt-8  flex 
-h-[137.54px] w-[342.75px] items-center justify-center rounded-md  bg-white text-center "
+          style={styles.headerBg}
+          className="absolute left-[50%] top-0 flex  h-[52.5px] w-[267.73px] translate-x-[-50%] translate-y-[-50%] transform items-center justify-center rounded-md  text-center  "
         >
-          <p className="text-white">{content}</p>
-          <div
-            style={styles.headerBg}
-            className="absolute left-[50%] top-0 flex  h-[52.5px] w-[267.73px] translate-x-[-50%] translate-y-[-50%] transform items-center justify-center rounded-md  text-center  "
-          >
-            <h6>{title}</h6>
-          </div>
+          <h6>{title}</h6>
         </div>
       </div>
-    </>
+    </div>
   );
 };

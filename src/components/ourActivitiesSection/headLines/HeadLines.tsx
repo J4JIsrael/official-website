@@ -1,6 +1,6 @@
 'use client';
 import { type ActivitiesLabel } from '@/types';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { HeadlineBtn } from './HeadlineBtn';
 
 interface HeadLinesProps {
@@ -9,7 +9,7 @@ interface HeadLinesProps {
 
 export const HeadLines = ({ setActiveLabel }: HeadLinesProps) => {
   type btnSelected = 'btnL' | 'btnCenter' | 'btnR';
-  const [isSelected, setIsSelected] = useState<btnSelected>('btnCenter');
+  const setIsSelected = useState<btnSelected>('btnCenter')[1];
 
   const [btnLSelected, setBtnLSelected] = useState('');
   const [btnCenter, setBtnCenterSelected] = useState('');
@@ -35,10 +35,15 @@ export const HeadLines = ({ setActiveLabel }: HeadLinesProps) => {
     console.log(selectedClass);
   }, [isSelected]);
 
+
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex  flex-col items-center justify-evenly ">
       <h2 className="text-3xl font-bold text-white">הפעילות שלנו</h2>
+
       <div className="flex h-32 w-11/12 items-center justify-center gap-2">
+
+      <div className=" flex h-32 w-11/12 items-center justify-center gap-4">
+
         <HeadlineBtn
           onClick={() => onClick('btnR', 'education')}
           className={`relative rounded-l-[1rem] rounded-r-[5rem] ${btnR}`}

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 interface IconProps {
@@ -17,9 +16,7 @@ export const GoalIcon = ({ svgIcon }: IconProps) => {
         <div className="absolute h-4/6 w-4/6 rounded-full border border-white opacity-30" />
         <div className="absolute h-3/6 w-3/6 rounded-full border border-white opacity-30" />
       </div>
-      <h3 className="absolute -bottom-10 text-3xl text-aqua-bright text-white">
-        קורסים והעשרה
-      </h3>
+      <h3 className="absolute -bottom-10 text-3xl text-white">קורסים והעשרה</h3>
     </div>
   );
 };

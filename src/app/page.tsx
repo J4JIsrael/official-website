@@ -1,5 +1,6 @@
 import {
   CommunitySentence,
+  GoalIcons,
   Main,
   OurActivitiesSection,
   PageWrapper,
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <PageWrapper>
       <Main />
+      <GoalIcons />
       <CommunitySentence />
       <OurActivitiesSection />
     </PageWrapper>

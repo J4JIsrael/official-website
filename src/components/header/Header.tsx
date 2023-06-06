@@ -9,7 +9,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="p-6">
       <div className="m-auto flex max-w-[1200px] flex-row-reverse flex-wrap items-center justify-between py-4">
         <Link href="/">
           <Image
@@ -37,12 +37,7 @@ export const Header = () => {
             className="border-gray-100 dark:border-gray-700 mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:space-x-reverse md:border-0 md:p-0"
             style={{ direction: 'rtl' }}
           >
-            <NavBarItem href="#">עלינו</NavBarItem>
-            <NavBarItem href="#">פנאי</NavBarItem>
-            <NavBarItem href="#">דרושים</NavBarItem>
-            <NavBarItem href="#">העשרות</NavBarItem>
-            <NavBarItem href="#">קורסים</NavBarItem>
-            <NavBarItem href="#">פרויקטים</NavBarItem>
+            <NavBarItem href="/">עלינו</NavBarItem>
           </ul>
         </div>
       </div>
