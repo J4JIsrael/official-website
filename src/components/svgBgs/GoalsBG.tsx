@@ -1,11 +1,11 @@
 import { type SvgBGProps } from '@/types';
 import Image from 'next/image';
 
-export const HeaderWelcomeBG = ({ className }: SvgBGProps) => (
+export const GoalsBG = ({ className }: SvgBGProps) => (
   <div className={className}>
     <Image
-      src="/assets/svgBgs/headerWelcome.svg"
-      alt="people graph"
+      src="/assets/svgBgs/Goals.svg"
+      alt="goals"
       fill
       className="object-cover"
     />
