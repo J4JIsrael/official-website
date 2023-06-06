@@ -15,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl">
       <body className="-z-20 overflow-x-hidden bg-background">
-        <Header />
-        {children}
-        <Footer />
+        <div className="relative">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
