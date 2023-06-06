@@ -1,9 +1,9 @@
 'use client';
 import { HeadLines } from '@/components/ourActivitiesSection/headLines/HeadLines';
 import { OurActivities } from '@/components/ourActivitiesSection/ourActivities/OurActivities';
+import { ActivityBG } from '@/components/svgBgs';
 import { type ActivitiesLabel } from '@/types';
 import React, { useState } from 'react';
-import { CircleShadow } from './circleShadow/CircleShadow';
 import { Subtitle } from './subtitle/Subtitle';
 
 export const OurActivitiesSection = () => {
@@ -11,7 +11,7 @@ export const OurActivitiesSection = () => {
 
   return (
     <section className="relative">
-      <CircleShadow />
+      <ActivityBG className="absolute left-0 top-0 h-full w-full" />
       <HeadLines setActiveLabel={setActiveLabel} />
       <Subtitle activeLabel={activeLabel} />
       <OurActivities activeLabel={activeLabel} />
