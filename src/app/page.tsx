@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <PageWrapper>
       <Main />
-      <CommunitySentence />
       <GoalIcons />
+      <CommunitySentence />
       <OurActivitiesSection />
     </PageWrapper>
   );
