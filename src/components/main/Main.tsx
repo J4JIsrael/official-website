@@ -1,4 +1,3 @@
-import { CircleShadowRight } from './CircleShadowRight';
 import { PeopleGraph } from './PeopleGraph';
 
 // import { ReadMoreBtn } from './ReadMoreBtn';
@@ -19,7 +18,7 @@ export const Main = () => (
             Juniors for Juniors
           </span>
         </h1>
-        <CircleShadowRight />
+        {/* <CircleShadowRight /> */}
         <p className="my-12 text-2xl xs:text-center sm:text-center md:text-start lg:text-start">
           קהילת Juniors for Juniors (או J4J) היא מקום שבו ג׳וניורים בתחומים
           שונים בהייטק יכולים לשתף פעולה אחד עם השני על ידי עזרה ותמיכה בנושאים
