@@ -21,6 +21,8 @@ module.exports = {
       background: '#080808',
       'white-50': 'rgb(var(--color-white) / 0.5)',
       black: '#000',
+      violetTransparent: '#8b5cf633'
+
     },
 
     extend: {
