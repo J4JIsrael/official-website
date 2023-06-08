@@ -12,7 +12,7 @@ export const HeadlineBtn = ({ text, className, onClick }: HeadlineBtnProps) => {
       opacity-40 transition-all duration-300  hover:opacity-80 focus:z-10  ${className}`}
     >
       <h3 className="font-sans text-lg font-bold text-white">{text}</h3>
-      {/* test - delete */}
+      {/* test 2 - delete */}
     </div>
   );
 };
