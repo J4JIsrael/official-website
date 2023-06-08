@@ -15,7 +15,8 @@ export const HeadLines = ({ setActiveLabel }: HeadLinesProps) => {
   const [btnCenter, setBtnCenterSelected] = useState('');
   const [btnR, setBtnRSelected] = useState('');
 
-  const selectedClass = 'h-20 scale-110 rounded-3xl opacity-80';
+  const selectedClass =
+    'h-20 scale-110  opacity-80 rounded-l-2xl rounded-r-2xl scale-x-110';
 
   const onClick = (type: btnSelected, newActiveLabel: ActivitiesLabel) => {
     setActiveLabel(newActiveLabel);
