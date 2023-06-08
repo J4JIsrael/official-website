@@ -12,7 +12,7 @@ export const OurActivitiesSection = () => {
   return (
     <section className="relative">
       <ActivityBG className="absolute left-0 top-0 h-full w-full" />
-      <HeadLines setActiveLabel={setActiveLabel} />
+      <HeadLines activeLabel={activeLabel} setActiveLabel={setActiveLabel} />
       <Subtitle activeLabel={activeLabel} />
       <OurActivities activeLabel={activeLabel} />
     </section>
