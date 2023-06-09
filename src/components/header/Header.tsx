@@ -9,17 +9,30 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="p-6">
+    <nav className="border-color-aqua p-6">
       <div className="m-auto flex max-w-[1200px] flex-row-reverse flex-wrap items-center justify-between py-4">
-        <Link href="/">
-          <Image
-            src="/assets/logo.png"
-            width="156"
-            height="59"
-            // className="mr-3"
-            alt="J4J Logo"
-          />
-        </Link>
+        <div>
+          <div className="cursor:pointer hidden lg:block">
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                width="156"
+                height="59"
+                alt="J4J Logo"
+              />
+            </Link>
+          </div>
+          <div className="cursor:pointer xs:block sm:block md:block lg:hidden xl:hidden">
+            <Link href="/">
+              <Image
+                src="/assets/square-icon.png"
+                width="41"
+                height="46"
+                alt="J4J Logo"
+              />
+            </Link>
+          </div>
+        </div>
         <button
           type="button"
           onClick={() => setOpen(!open)}
@@ -28,7 +41,6 @@ export const Header = () => {
           <span className="sr-only">Open main menu</span>
           <HamburgerIcon className="h-6 w-6" />
         </button>
-        {/* <div className="w-full md:block md:w-auto" id="navbar-default"> */}
         <div
           className={`${open ? 'block' : 'hidden'} w-full md:block md:w-auto`}
           id="navbar-default"
