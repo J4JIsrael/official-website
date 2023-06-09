@@ -2,9 +2,10 @@ import React from 'react';
 
 interface IconProps {
   svgIcon: React.ReactNode;
+  label: string;
 }
 
-export const GoalIcon = ({ svgIcon }: IconProps) => {
+export const GoalIcon = ({ svgIcon, label }: IconProps) => {
   return (
     <div className="relative flex h-60 w-60 flex-col items-center justify-center">
       <div className="flex items-center justify-center">
@@ -16,7 +17,16 @@ export const GoalIcon = ({ svgIcon }: IconProps) => {
         <div className="absolute h-4/6 w-4/6 rounded-full border border-white opacity-30" />
         <div className="absolute h-3/6 w-3/6 rounded-full border border-white opacity-30" />
       </div>
-      <h3 className="absolute -bottom-10 text-3xl text-white">קורסים והעשרה</h3>
+      <p
+        className="absolute -bottom-14 text-3xl text-white
+      xs:w-[280px] xs:text-center xs:text-[22px]
+      sm:w-[280px] sm:text-center sm:text-[22px]
+      md:w-[280px] md:text-center md:text-[32px]
+
+      "
+      >
+        {label}
+      </p>
     </div>
   );
 };
