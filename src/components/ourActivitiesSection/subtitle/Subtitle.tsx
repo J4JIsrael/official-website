@@ -7,9 +7,9 @@ interface SubtitleProps {
 
 function setTitle(activeLabel: ActivitiesLabel) {
   const copy = {
-    education: 'העשרה: להרחיב אופקים בתחומים מגוונים',
-    jobs: 'מציאת עבודה: עוזרים אחד לשני כדי למצוא משרות ועבודות',
-    projects: 'פרויקטים: רוכשים ניסיון מעשי על ידי פרויקטים במסגרות שונות',
+    education: 'להרחיב אופקים בתחומים מגוונים',
+    jobs: 'עוזרים אחד לשני כדי למצוא משרות ועבודות',
+    projects: 'רוכשים ניסיון מעשי על ידי פרויקטים במסגרות שונות',
   };
 
   switch (activeLabel) {
@@ -31,7 +31,6 @@ export const Subtitle = ({ activeLabel }: SubtitleProps) => {
         fontFamily: 'Noto Sans Hebrew',
         fontStyle: 'normal',
         fontWeight: 400,
-        fontSize: '24px',
         lineHeight: '33px',
         textAlign: 'center',
         background:
@@ -44,6 +43,7 @@ export const Subtitle = ({ activeLabel }: SubtitleProps) => {
         marginTop: '-10px',
         marginBottom: '40px',
       }}
+      className="weight-400 xs:text-[16px] sm:text-[16px] md:text-[24px] lg:text-[24px] xl:text-[24px]"
     >
       {setTitle(activeLabel)}
     </p>
