@@ -3,7 +3,7 @@ import React from 'react';
 export const CircleShadow = () => {
   return (
     <div
-      className="z-0 sm:h-[700px] sm:w-full lg:h-[743px] lg:w-[936px]"
+      className="sm:h-[700px] sm:w-full lg:h-[743px] lg:w-[936px]"
       style={{
         position: 'absolute',
         left: '50%',
