@@ -33,7 +33,7 @@ export const Header = () => {
             </Link>
           </div>
         </div>
-        <button
+        {/* <button
           type="button"
           onClick={() => setOpen(!open)}
           className="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-50 ml-3 inline-flex items-center rounded-lg p-2 text-sm focus:outline-none focus:ring-2 md:hidden"
@@ -51,8 +51,10 @@ export const Header = () => {
           >
             <NavBarItem href="/">עלינו</NavBarItem>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
 };
+
+// TODO: Uncomment this when we have more pages
