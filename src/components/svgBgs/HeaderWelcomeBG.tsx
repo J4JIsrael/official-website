@@ -7,7 +7,6 @@ export const HeaderWelcomeBG = ({ className }: SvgBGProps) => (
       src="/assets/svgBgs/HeaderWelcome.svg"
       alt="header welcome BG"
       fill
-      className="object-cover"
     />
   </div>
 );

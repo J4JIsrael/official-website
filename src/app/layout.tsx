@@ -13,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="rtl">
-      <body className="-z-20 overflow-x-hidden bg-background">
-        <div className="relative">
+    <html lang="en" dir="rtl" className="overflow-x-hidden">
+      <body className=" overflow-x-hidden bg-background">
+        <div className="relative z-0">
           <Header />
           {children}
           <Footer />

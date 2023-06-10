@@ -3,7 +3,7 @@ import React from 'react';
 export const CircleShadowRight = () => {
   return (
     <div
-      className="z-0 sm:h-[700px] sm:w-full lg:h-[446px] lg:w-[793px]"
+      className="sm:h-[700px] sm:w-full lg:h-[446px] lg:w-[793px]"
       style={{
         position: 'absolute',
         right: 0,
