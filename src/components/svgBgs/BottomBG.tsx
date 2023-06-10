@@ -5,7 +5,7 @@ export const BottomBG = ({ className }: SvgBGProps) => (
   <div className={className}>
     <Image
       src="/assets/svgBgs/Bottom.svg"
-      alt="people graph"
+      alt="Bottom BG"
       fill
       className="object-cover"
     />

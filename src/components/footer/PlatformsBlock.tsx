@@ -6,7 +6,7 @@ import { YoutubeIcon } from '@/components/icons/YoutubeIcon';
 
 export const PlatformsBlock = () => {
   return (
-    <div className="flex flex-row items-center justify-evenly gap-2">
+    <div className="z-50 flex flex-row items-center justify-evenly gap-2">
       <a
         href="https://www.facebook.com/groups/5915476325238538"
         target="_blank"
