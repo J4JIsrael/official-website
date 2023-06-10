@@ -46,7 +46,7 @@ export const Header = () => {
           id="navbar-default"
         >
           <ul
-            className="border-gray-100 dark:border-gray-700 z-50 mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:space-x-reverse md:border-0 md:p-0"
+            className="z-50 mt-4 flex flex-col rounded-lg border-2 border-[#babababa] p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:space-x-reverse md:border-0 md:p-0"
             style={{ direction: 'rtl' }}
           >
             <NavBarItem href="/">עלינו</NavBarItem>
