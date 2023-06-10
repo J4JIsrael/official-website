@@ -3,7 +3,7 @@ import React from 'react';
 
 export const CommunitySentence = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative z-50 w-full">
       <QuoteBG className="absolute left-0 top-0 h-full w-full " />
       <div
         style={{
