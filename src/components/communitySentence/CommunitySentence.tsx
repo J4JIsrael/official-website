@@ -3,8 +3,8 @@ import React from 'react';
 
 export const CommunitySentence = () => {
   return (
-    <div className="relative z-50 w-full">
-      <QuoteBG className="absolute left-0 top-0 h-full w-full " />
+    <div className="relative z-50 my-10 w-full">
+      <QuoteBG className="brder-color-white absolute left-0 h-full w-full translate-y-[-35%] transform p-44" />
       <div
         style={{
           background:
@@ -22,7 +22,7 @@ export const CommunitySentence = () => {
           md:text-[23px]
           lg:text-center lg:text-[34px]"
         >
-          תמצא לך למה, תמצא שותפים ותתחיל עכשיו
+          מצאו לכם למה, צרו קשרים והתחילו עכשיו
         </p>
       </div>
     </div>
