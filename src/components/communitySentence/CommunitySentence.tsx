@@ -22,7 +22,7 @@ export const CommunitySentence = () => {
           md:text-[23px]
           lg:text-center lg:text-[34px]"
         >
-          תמצא לך למה, תמצא שותפים ותתחיל עכשיו
+          מצאו לכם למה, צרו קשרים והתחילו עכשיו
         </p>
       </div>
     </div>
