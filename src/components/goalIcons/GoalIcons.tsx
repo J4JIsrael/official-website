@@ -4,7 +4,7 @@ import { GoalIcon } from './GoalIcon';
 
 export const GoalIcons = () => {
   return (
-    <div className="relative flex w-full flex-col items-center gap-12 xs:w-[120%] transform xs:translate-x-[10%]">
+    <div className="relative flex w-full transform flex-col items-center gap-12 xs:w-[120%] xs:translate-x-[10%] sm:w-[120%] sm:translate-x-[10%] md:w-[100%] md:translate-x-[0%]">
       <GoalsBG className="absolute left-0 top-4 h-[calc(140%)] w-full translate-y-[-10%] overflow-visible " />
       <h2 className="font-bold xs:text-[34px] md:text-[34px] lg:text-[64px]">
         מטרות הקהילה
